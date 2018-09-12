@@ -7,7 +7,7 @@ This is a repository with the *Matlab* course that I made on Federal Institute o
 Using Matlab 2015a.
 
 ## Class
-* [Class 1]() - Variables, math operations.
+* [Class 1](https://github.com/leticiacoelho/Matlab-Course/blob/master/class1.m) - Variables, math operations.
 
 ## Reference
 * [Wiki](https://wiki.sj.ifsc.edu.br/wiki/index.php/FIC_MATLAB_2018-2) - FIC MATLAB 2018-2 Reference Material.
