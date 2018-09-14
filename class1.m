@@ -13,3 +13,13 @@ power = 3^3;
 subtraction = a-b;
 multiplication = a*b;
 
+%% Exercise
+
+x = 11.6;
+y = -17;
+
+a = x+y;
+b = 5*(x + 2*y);
+c = (x^2)/y;
+d = (x+y)/(exp(x/y)*log(pi));
+e = 5.2*cos((x+y)/(exp(x/y)*log(pi))).^2;
