@@ -51,5 +51,20 @@
     % d) Init: 100, End: 12, with 100 elements regularly spaced
         d1 = 100:-((100-12)-1)/100:12;
         d1_log = linspace(100,12,100);
+        
+ % 2. Crie os vetores descritos abaixo: 
 
-       
+    % a) Início: 10, Fim: 1000, com 50 elementos logaritmicamente espaçados. 
+     a = logspace(1,3,50)
+     
+    % b) Início: 0,01, Fim: 1, com 20 elementos logaritmicamente espaçados. 
+     b = logspace(1,-2,20)
+     
+     
+    % 3. Crie um vetor x que tenha 6 valores entre 0 e 10. Em seguida, crie uma matriz A cuja primeira linha contenha os valores 3x e segunda linha contenha os valores 5x - 20. 
+  x = [0 1 5 7 4 8 1];
+  A = [3.*x;((5.*x)-20)];
+  
+% 4. Repita o exercício anterior, substituindo a palavra linha por coluna. 
+  x = [0 1 5 7 4 8 1];
+  A = [((5.*x)-20);3.*x];    
