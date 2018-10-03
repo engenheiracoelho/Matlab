@@ -38,38 +38,15 @@ roots(q) % Know how the roots of polynomial
 poly(2,3) % What's a polynomial that have the 2 and 3 roots
 conv([1 1],[2 3]); %Convolution of polynomials
 
-%% Show all the positive integers;
+%% Exercise
 
-    % Smaller than 100 that are multiples of 3 or 5.
-    % Smaller than 200 that are multiples of 3 or 5.
-    % Smaller than 125 that are multiples of 3 or 5, but not both. 
-   
-    
-    
-%% Use the MATLAB toobtain the roots of the polynomial. Use the poly
-% function to confirm your response.
-% x^3 + 13x^2 + 52x + 6 
+% Show all the positive integers
 
+% Smaller than 100 and are multiple of 3 or 5. 
+P = (1:1:100);
+p = P([1:2:end 1:5:end]);
 
+% Smaller than 200 and are multiple of 3 or 5. 
 
-%% Use the MATLAB to confirm that
-% (20x^3 - 7x^2 + 5x + 10)(4x^2 + 12x - 3) = 80x^5 + 212x^4 - 124x^3 + 121x^2 + 105x - 30}. 
-
-
-
-
-%% Use the MATLAB to confirm that {12x^3 + 5x^2 - 2x + 3}{3x^2 - 7x + 4} = 4x + 11 with rest {59x - 41}. 
-
-
-
-
-%% Use the MATLAB to confirm that {6x^3 + 4x^2 - 5}{12x^3 - 7x^2 + 3x + 9} = 0{,}7108 when x = 2. 
-
-
-
-
-%% Plot the polynomial {x^3 + 13x^2 + 52x + 6} along the track -7 \leq x \leq 1. 
-
-
-
-
+% Smaller than 125 and are multiple of 3 or 5, but not the same.
+ 
