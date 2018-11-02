@@ -115,9 +115,3 @@
     disp('## Calculator program ##');
     prompt = 'Inform the operation + , - , / , * ';
     operation = input(prompt);
-    
-    
-%% EX 6
-
-% Modify the IMC calculator program to inform the user status weight. 
-

@@ -67,13 +67,14 @@
         prompt = '--> "y" axis name/label: ';
             y_label = input(prompt);         
             
-        prompt = '--> axis value range "x": ';
+        prompt = '--> "x" axis value: ';
             x_range = input(prompt);         
             
-        prompt = '--> axis value range "y": ';
+        prompt = '--> "y" axis value: ';
             y_range = input(prompt);             
            
-        Diagram = struct('x_data',x_data,'y_data',y_data,'title',title,'x_label',x_label,'y_label',y_label,'x_range',x_range,'y_range',y_range)
+        Diagram = struct('ax',ax,'ay',ay,'bx',bx,'by',by);
+            
             
             
 %% EX3
