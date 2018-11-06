@@ -77,19 +77,22 @@
             
             
 %% EX3
-% Crie um arranjo de estruturas que contenha os os seguintes campos de informação concernentes a pontes rodoviárias em uma cidade: localização da ponte, carga máxima (toneladas), ano de construção, ano agendado para a manutenção. 
+% Create an array of structs that contain the following information:
 
-        % Insira os dados abaixo na estrutura: 
+        %    Local       	Maximum load    Year of construction  Schedule for maintenance
+        %    Smith St.      80              1928                  2011
+        %    Hope Ave.      90              1950                  2013
+        %    Clark St.      85              1933                  2012
+        %    North Rd.      100             1960                  2012 
+        
+        bridge_maintenance_1 = struct('Local','Smith St.','Maximum_load',80,'Year',1928,'maintenance',2011)
+        bridge_maintenance_2 = struct('Local','Hope Ave.','Maximum_load',90,'Year',1950,'maintenance',2013)
+        bridge_maintenance_3 = struct('Local','Clark St.','Maximum_load',85,'Year',1933,'maintenance',2012)
+        bridge_maintenance_4 = struct('Local','North Rd.','Maximum_load',100,'Year',1960,'maintenance',2012)
+        
+        maintenance = struct('bridge1',bridge_maintenance_1,'bridge2',bridge_maintenance_2,'bridge3',bridge_maintenance_3,'bridge4',bridge_maintenance_4)
+        % Edit the array of structs to change 2012 to 2018 on Clark St. bridge. 
 
-        %    Localização 	Carga máxima 	Ano de construção 	Agendamento para a manutenção
-        %    Smith St. 	80 	1928 	2011
-        %    Hope Ave. 	90 	1950 	2013
-        %    Clark St. 	85 	1933 	2012
-        %    North Rd. 	100 1960 	2012 
-
-        % Edite o arranjo de estruturas para mudar de 2012 para 2018 o ano agendado para a manutenção da ponte Clark St. 
-
-        % Adicione a seguinte ponte ao arranjo de estruturas: 
-
-        %    Localização 	Carga máxima 	Ano de construção 	Agendamento para a manutenção
-        %    Shore Rd. 	85 	1997 	2014 
+        % Add the struct to the maintenance struct
+        %    Local       	Maximum load    Year of construction  Schedule for maintenance
+        %    Shore Rd.      85              1997                  2014 
