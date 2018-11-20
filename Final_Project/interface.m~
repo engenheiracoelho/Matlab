@@ -51,10 +51,8 @@ function pushbutton3_Callback(hObject, eventdata, handles)
     guidata(hObject, handles);
 
 function edit1_Callback(hObject, eventdata, handles)
-    handles.f = handles.edit1.String
-    if (isequal(handles.f_nomes handles.f))
-        handles.f_nomes = [handles.f_nomes handles.f]
-    end
+    handles.f = handles.edit1.String;
+    handles.f_nomes 
     guidata(hObject, handles);
          
 function edit1_CreateFcn(hObject, eventdata, handles)
