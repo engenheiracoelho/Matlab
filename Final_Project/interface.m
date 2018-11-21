@@ -25,6 +25,7 @@ function interface_OpeningFcn(hObject, eventdata, handles, varargin)
     handles.f = 0;
     handles.t = 0;
     handles.v = [0];
+    handles.f_nomes = [0];
     handles.matrix = [0 0];
     handles.output = hObject;
     handles.st = struct('nome','','valor','','pagamentos','');
@@ -41,8 +42,8 @@ function pushbutton3_Callback(hObject, eventdata, handles)
     for v = handles.matrix
            v_nome = [handles.st.nome handles.st.nome]
     end  
-    f = handles.f; % Nome
-    f_nomes = handles.f; % Nome
+    f = handles.f; %Nome
+    f_nomes = handles.f; %Nome
     t = handles.t; % Valor pago
     v = handles.v;  % Vetor de pagamento  
     handles.v = [v t];
@@ -52,9 +53,13 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 
 function edit1_Callback(hObject, eventdata, handles)
     handles.f = handles.edit1.String
-    if (isequal(handles.f_nomes handles.f))
-        handles.f_nomes = [handles.f_nomes handles.f]
-    end
+    for v = handles.f_nomes
+        if(handles.f == v)
+            handles.f_nomes = handles.f;
+        else
+            handles.f_nomes = [handles.f_nomes handles.f];
+        end
+    end    
     guidata(hObject, handles);
          
 function edit1_CreateFcn(hObject, eventdata, handles)
